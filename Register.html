@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Login Page </title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width , initial-scale=1">
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="icon" href="res/tablogo.jpg">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="res/logo11.png" alt="header_logo" width="5px" height="100px" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="Homepage.html">Homepage</a></li>
+                        <li><a href="Place.html">Places</a></li>
+                        <li><a href="Map.html">Map</a></li>
+                        <li><a href="Login.html">Booking</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="Privacy and Policy.html">Privacy and Policy</a></li>
+                    </ul>
+                </nav>
+                <img src="res\nav.png" alt="" class="menu-icon" onclick="togglemenu()">
+                <!----------------------------------------------------------------------------------------->
+                <script>
+                    var menuList=document.getElementById("menuList");
+
+                    menuList.style.maxHeight="0px";
+
+                    function togglemenu(){
+                        if( menuList.style.maxHeight=='0px')
+                        {
+                            menuList.style.maxHeight="200px";
+                        }
+                        else
+                        {
+                            menuList.style.maxHeight="0px";
+                        }
+                    }
+                </script>
+                 <!----------------------------------------------------------------------------------------->
+            </div>
+
+                          
+<div class="loginmain">
+    <div class="rowl">
+        <div class="loginpanel">
+            <h1>Registration form</h1>
+            <form action="Registerv.php" method="Post">
+                 <div class="box">
+                    <i class="fa fa-user-plus" aria-hidden="true"></i>
+                    <input type="text" name="name"  placeholder="Enter Your Full name">
+                 </div>
+
+                 <div class="box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Enter Your Email">
+                 </div>
+
+                 <div class="box">
+                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                    <input type="number" name="phone"  placeholder="Enter Your mobile.number">
+                 </div>
+
+                <div class="box">
+                    <i class="fa fa-key"></i>
+                     <input type="password" name="password"  placeholder="Enter Your Password">
+                 </div>
+
+            <button class="btn">Register</button>
+                 <div class="box1">
+                     <h3>To login on our website <a href="Login.html">Login</a></h3>
+                 </div>
+
+        </form>
+        </div>
+
+    </div>
+            </div>
+
+        <!------------------footer design----------------------------------------------->
+            <footer class="footer">
+                <div class="container1">
+                    <div class="row1">
+                        <div class="footer-col">
+                            <h4>About TravelGO</h4>
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="#">Offers</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Info</h4>
+                            <ul>
+                                <li><a href="#">T & C</a></li>
+                                <li><a href="#">Privacy & Policy</a></li>
+                                <li><a href="Admin Panel/dashboard.html">Admin Panel</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Travel Place</h4>
+                            <ul>
+                                <li><a href="#">Maharashtra</a></li>
+                                <li><a href="#">Gujrat</a></li>
+                                <li><a href="#">Punjab</a></li>
+                                <li><a href="#">Karnatak</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <h5 style="color: aliceblue;">Copyright @ 2021-22</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+            </footer>
+       
+    </body>
+</html>
+           

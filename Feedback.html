@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>
+            Tourism managemnet 
+        </title>
+         
+        <meta name="viewport" content="width-device-width , initial-scale=1.0">
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+       
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="res/logo11.png" alt="header_logo" class="logo" width="5px" height="100px">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="Booking.php">Booking</a></li>
+                        
+                        <li><a class="active" href="Feedback.html">Feedback</a></li>
+                        <li><a href="Homepage.html">Log out</a></li>
+                       
+                    </ul>
+                </nav>
+                <img src="res/nav.png" alt="" class="menu-icon" onclick="togglemenu()">
+            </div>  
+            <!----------------------------------------------------------------------------------------->
+            <script>
+                var menuList=document.getElementById("menuList");
+
+                menuList.style.maxHeight="0px";
+
+                function togglemenu(){
+                    if( menuList.style.maxHeight=='0px')
+                    {
+                        menuList.style.maxHeight="200px";
+                    }
+                    else
+                    {
+                        menuList.style.maxHeight="0px";
+                    }
+                }
+            </script>
+ <!----------------------------------------------------------------------------------------->
+            <div class="htitle">
+                <h1>Feedback form</h1>
+            </div>
+
+            <div class="feed">
+                <form action="feedback.php" method="POST">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="fname" name="Name" placeholder="Your name.." required>
+                
+                    <label for="">City</label>
+                    <input type="text" name="City" id="" required>
+
+                    <label for="Email">Email</label>
+                    <input type="email" name="Email" id="" required>
+
+                    <label for="phone">Phone no</label>
+                    <input type="number" name="Phone" id="" required>
+
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="Subject" placeholder="Write something.." style="height:100px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
+             
+        </div>            
+<!------------------footer design----------------------------------------------->
+              <footer class="footer">
+                <div class="container1">
+                    <div class="row1">
+                        <div class="footer-col">
+                            <h4>About TravelGO</h4>
+                            <ul>
+                                <li><a href="About.html">About us</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Sitemap</a></li>
+                                <li><a href="Feedback.html">Feedback</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Info</h4>
+                            <ul>
+                                <li><a href="#">T & C</a></li>
+                                <li><a href="#">Privacy & Policy</a></li>
+                                <li><a href="Admin Panel/dashboard.html">Admin Login</a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Travel Place</h4>
+                            <ul>
+                                <li><a href="#">Maharashtra</a></li>
+                                <li><a href="#">Gujrat</a></li>
+                                <li><a href="#">Punjab</a></li>
+                                <li><a href="#">Karnatak</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Follow us</h4>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+            </footer>
+
+        </div>
+    </body>
+</html>
